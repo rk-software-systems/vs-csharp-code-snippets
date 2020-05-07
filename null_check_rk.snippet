@@ -1,0 +1,30 @@
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Null reference check</Title>
+            <Shortcut>nrc_rk</Shortcut>
+            <Description>Check if Argument null and throw NullReference Exceation if it is true.</Description>
+            <Author>RK Software Systems.</Author>
+            <SnippetTypes>
+                <SnippetType>Expansion</SnippetType>
+            </SnippetTypes>
+        </Header>
+        <Snippet>
+            <Declarations>
+                <Literal default="true" Editable="true">
+                    <ID>variable</ID>
+                    <ToolTip>Variable to be null checked.</ToolTip>
+                    <Default>VariableToCheck</Default>
+                </Literal>
+            </Declarations>
+            <Code Language="csharp" Format="CData">
+                <![CDATA[
+                  if ($variable$ == null)
+                  {
+                      throw new ArgumentNullException(nameof($variable$));
+                  }
+                ]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

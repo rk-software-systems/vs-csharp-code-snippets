@@ -18,3 +18,10 @@ public $classname$()
 {
 }
 ```
+- **nrc_rk** - null reference check
+```csharp
+if ($variable$ == null)
+{
+    throw new ArgumentNullException(nameof($variable$));
+}
+```
