@@ -25,3 +25,11 @@ if ($variable$ == null)
     throw new ArgumentNullException(nameof($variable$));
 }
 ```
+- **prt_status** - ASP.NET core API Produces Response Type snippet without response
+```csharp
+[ProducesResponseType((int)HttpStatusCode.$status$)]
+```
+- **prt_response** - ASP.NET core API Produces Response Type snippet with response
+```csharp
+[ProducesResponseType(typeof($type$), (int)HttpStatusCode.$responsestatus$)]
+```

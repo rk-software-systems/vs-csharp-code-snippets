@@ -1,0 +1,33 @@
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>ASP.NET core API Produces Response Type snippet without type.</Title>
+      <Shortcut>prt_status</Shortcut>
+      <Description>This snippet is used to add [ProducesResponseType] attribute to particular action with no result type specification.</Description>
+      <Author>RK Software Systems.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal default="true" Editable="true">
+          <ID>status</ID>
+          <ToolTip>Response status ENUM value.</ToolTip>
+          <Default>ResponseType</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp">
+        <![CDATA[[ProducesResponseType((int)HttpStatusCode.$status$)]]]>
+      </Code>
+      <Imports>
+        <Import>
+          <Namespace>Microsoft.AspNetCore.Mvc</Namespace>
+        </Import>
+        <Import>
+          <Namespace>System.Net</Namespace>
+        </Import>
+      </Imports>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

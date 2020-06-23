@@ -1,0 +1,38 @@
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>ASP.NET core API Produces Response Type snippet with response type.</Title>
+      <Shortcut>prt_response</Shortcut>
+      <Description>This snippet is used to add [ProducesResponseType] attribute to particular action with non-empty response.</Description>
+      <Author>RK Software Systems.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal default="true" Editable="true">
+          <ID>type</ID>
+          <ToolTip>Type of the response.</ToolTip>
+          <Default>ResponseType</Default>
+        </Literal>
+        <Literal default="true" Editable="true">
+          <ID>responsestatus</ID>
+          <ToolTip>Response status.</ToolTip>
+          <Default>ResponseStatus</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp">
+        <![CDATA[[ProducesResponseType(typeof($type$), (int)HttpStatusCode.$responsestatus$)]]]>
+      </Code>
+      <Imports>
+        <Import>
+          <Namespace>Microsoft.AspNetCore.Mvc</Namespace>
+        </Import>
+        <Import>
+          <Namespace>System.Net</Namespace>
+        </Import>
+      </Imports>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
