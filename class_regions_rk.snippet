@@ -1,0 +1,48 @@
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Class body skeleton with regions.</Title>
+            <Shortcut>rgn_rk</Shortcut>
+            <Description>Code snippet for a class body skeleton.</Description>
+            <Author>RK Software Systems.</Author>
+            <SnippetTypes>
+                <SnippetType>Expansion</SnippetType>
+            </SnippetTypes>
+        </Header>
+        <Snippet>
+            <Declarations>
+                <Literal default="true" Editable="false">
+                    <ID>classname</ID>
+                    <ToolTip>Class name</ToolTip>
+                    <Function>ClassName()</Function>
+                    <Default>ClassNamePlaceholder</Default>
+                </Literal>
+            </Declarations>
+            <Code Language="csharp">
+                <![CDATA[                  
+                  #region consts                  
+                  #endregion
+                  
+                  #region fields                  
+                  #endregion
+                  
+                  #region props                  
+                  #endregion
+                  
+                  #region ctors
+                  
+                  public $classname$()
+                  {
+                  }
+                  #endregion
+                  
+                  #region methods
+                  #endregion
+                  
+                  #region helpers
+                  #endregion
+                ]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

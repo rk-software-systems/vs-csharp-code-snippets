@@ -33,3 +33,27 @@ if ($variable$ == null)
 ```csharp
 [ProducesResponseType(typeof($type$), StatusCodes.$responsestatus$)]
 ```
+- **rgn_rk** - class body skeleton with regions.
+```csharp
+#region consts                  
+#endregion
+                  
+#region fields                  
+#endregion
+                  
+#region props                  
+#endregion
+                  
+#region ctors
+                  
+public $classname$()
+{
+}
+#endregion
+                  
+#region methods
+#endregion
+                  
+#region helpers
+#endregion
+```
