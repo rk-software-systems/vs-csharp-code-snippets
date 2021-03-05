@@ -18,11 +18,14 @@
         </Literal>
       </Declarations>
       <Code Language="csharp">
-        <![CDATA[[ProducesResponseType((int)HttpStatusCode.$status$)]]]>
+        <![CDATA[[ProducesResponseType(StatusCodes.$status$)]]]>
       </Code>
       <Imports>
         <Import>
           <Namespace>Microsoft.AspNetCore.Mvc</Namespace>
+        </Import>
+        <Import>
+          <Namespace>Microsoft.AspNetCore.Http</Namespace>
         </Import>
         <Import>
           <Namespace>System.Net</Namespace>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>EntityViewModel</Name>
+    <Description>This template is used to create Entity View model for Create / Update Actions</Description>
+    <Icon>Class.ico</Icon>
+    <TemplateID>RKSoftware.CSharp.EntityViewModelTemplate</TemplateID>
+    <ProjectType>CSharp</ProjectType>
+    <SortOrder>10</SortOrder>
+    <DefaultName>EntityName</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectItem TargetFileName="Create$safeitemname$ViewModel.cs" ReplaceParameters="true">
+      EntityViewModel.cs
+    </ProjectItem>
+    <ProjectItem TargetFileName="Update$safeitemname$ViewModel.cs" ReplaceParameters="true">
+      EntityViewModel.cs
+    </ProjectItem>
+  </TemplateContent>
+</VSTemplate>

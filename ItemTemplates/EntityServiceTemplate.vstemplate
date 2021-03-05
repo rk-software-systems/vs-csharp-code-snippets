@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>EntityService</Name>
+    <Description>Services Template that can be used to generate classes for particular entity</Description>
+    <Icon>Class.ico</Icon>
+    <TemplateID>RKSoftware.CSharp.EntityServiceTemplate</TemplateID>
+    <ProjectType>CSharp</ProjectType>
+    <SortOrder>10</SortOrder>
+    <DefaultName>EntityName</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectItem TargetFileName="$safeitemname$QueryService.cs" ReplaceParameters="true">
+      EntityService.cs
+    </ProjectItem>
+    <ProjectItem TargetFileName="$safeitemname$TransactionService.cs" ReplaceParameters="true">
+      EntityService.cs
+    </ProjectItem>
+    <ProjectItem TargetFileName="$safeitemname$ValidationService.cs" ReplaceParameters="true">
+      EntityService.cs
+    </ProjectItem>
+  </TemplateContent>
+</VSTemplate>

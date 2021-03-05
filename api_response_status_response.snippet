@@ -23,7 +23,7 @@
         </Literal>
       </Declarations>
       <Code Language="csharp">
-        <![CDATA[[ProducesResponseType(typeof($type$), (int)HttpStatusCode.$responsestatus$)]]]>
+        <![CDATA[[ProducesResponseType(typeof($type$), StatusCodes.$responsestatus$)]]]>
       </Code>
       <Imports>
         <Import>
@@ -31,6 +31,9 @@
         </Import>
         <Import>
           <Namespace>System.Net</Namespace>
+        </Import>
+        <Import>
+          <Namespace>Microsoft.AspNetCore.Http</Namespace>
         </Import>
       </Imports>
     </Snippet>

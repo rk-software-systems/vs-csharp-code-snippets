@@ -27,9 +27,9 @@ if ($variable$ == null)
 ```
 - **prt_status** - ASP.NET core API Produces Response Type snippet without response
 ```csharp
-[ProducesResponseType((int)HttpStatusCode.$status$)]
+[ProducesResponseType(StatusCodes.$status$)]
 ```
 - **prt_response** - ASP.NET core API Produces Response Type snippet with response
 ```csharp
-[ProducesResponseType(typeof($type$), (int)HttpStatusCode.$responsestatus$)]
+[ProducesResponseType(typeof($type$), StatusCodes.$responsestatus$)]
 ```
